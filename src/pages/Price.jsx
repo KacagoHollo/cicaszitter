@@ -2,7 +2,7 @@ import React from 'react';
 
 function Price() {
   return (
-    <div>Price</div>
+    <div className='price'>Price</div>
   )
 }
 

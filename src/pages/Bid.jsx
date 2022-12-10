@@ -2,7 +2,7 @@ import React from 'react';
 
 function Bid() {
   return (
-    <div>Bid</div>
+    <div className='bid'>Bid</div>
   )
 }
 

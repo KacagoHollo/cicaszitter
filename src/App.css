@@ -1,38 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Varela+Round&display=swap');
+
+
 .App {
+  position: relative;
   text-align: center;
+  height: 100vw;
+  /* background-color: #905132; */
+  background: rgb(199,144,103);
+  background: -moz-radial-gradient(circle, rgba(199,144,103,1) 20%, rgba(144,81,50,1) 70%, rgba(129,94,119,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(199,144,103,1) 20%, rgba(144,81,50,1) 70%, rgba(129,94,119,1) 100%);
+  background: radial-gradient(circle, rgba(199,144,103,1) 20%, rgba(144,81,50,1) 70%, rgba(129,94,119,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c79067",endColorstr="#815e77",GradientType=1); 
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;  
+
+  margin: 10px;
+  /* margin-bottom: 10px; */
+  
+  padding-left: 10px;
+  padding-right: 10px;
+
+  /* margin: 12px 12px 2p 2px; */
+  background-color:#E6E9EC;
+
+  z-index: 9;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+div.left {
+  position: absolute;
+  left: 5px;
+  
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  /* z-index: 5; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.left h1 {
+  font-size: 3rem;
+  font-family: 'Chicle', cursive;
+  letter-spacing: 0.2rem;
+  color: #9eada8;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px #323a45;
 }
+
+img.cat-1 {
+  position: relative;
+  height: 90px;
+  z-index: 1;
+
+  border-radius: 20px;
+}
+
+nav.navbar div.right {
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+div.home, div.bid, div.price {
+  padding-top: 50px;
+}
+
+img.background {
+  padding-top: 120px;
+}
+
+button.paw {
+  display: flex;
+  justify-content: flex-end;
+}
+
+img.black-paw:hover {
+  transform: scale(110%);
+  color: #9eada8;
+}
+
+img.orange-paw:hover {
+  transform: scale(90%);
+}
+
+/* button.paw {
+  z-index: 999;
+  height: 100px;
+} */
+/* style={{backgroundColor:"#E6E9EC", height: "40px", display:"flex", alignItems: "center", justifyContent:"space-between"}} */
