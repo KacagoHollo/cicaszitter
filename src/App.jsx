@@ -15,19 +15,19 @@ function App() {
       
       <Navbar/>
       <main >
-      <img 
-        className='background'
-        style={{ 
-        width: '50%',
-        }} 
-        src={background}
-        alt="Cat Bacground Pic"
-      />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/arak' element={<Price />}/>
           <Route path='/arajanlat' element={<Bid />}/>
         </Routes>
+      <img 
+        className='background'
+        style={{ 
+        width: '30%',
+        }} 
+        src={background}
+        alt="Cat Bacground Pic"
+      />
       </main>
     </div>
   );
