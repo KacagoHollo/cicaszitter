@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { send } from 'emailjs-com';
 
 function Bid() {
   return (
-    <div className='bid'>Bid</div>
+    <div className='bid'>
+
+
+    </div>
   )
 }
 
