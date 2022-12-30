@@ -196,6 +196,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 
   gap: 10vw;
 
@@ -206,8 +207,8 @@ main {
 div.home, div.price {
   /* padding-top: 50px; */
   position: relative;
-  width: 40%;
-  height: 90%;
+  width: 50%;
+  height: 100%;
 
   padding: 40px 20px 60px 20px;
   /* padding-bottom: 60px; */
@@ -225,30 +226,29 @@ div.home, div.price {
 
 }
 
-/* div.home::after {
-
-  opacity: 0.5;
-} */
+div.price h1, div.price p, div.price ul {
+  text-align: center;
+}
 
 div.home h1, div.bid h1, div.price h1 {
   padding-bottom: 40px;
-
+  
   font-family: 'Chicle', cursive;
   letter-spacing: 0.1rem;
   color: #9eada8;
   font-weight: 400;
-  font-size: 4rem;
-  text-shadow: 2px 2px 2px #323a45;
+  font-size: 5rem;
+  text-shadow: 2px 2px 9px #323a45;
   /* margin-top: 30px; */
 }
 
-div.home p, div.bid p, div.price p {
-  font-size: 2.2rem;
+div.home p, div.bid p, div.price p, div.price ul {
+  font-size: 2.8rem;
   font-family: 'Andika', sans-serif;
   font-weight: 700;
   color: rgba(230, 233, 236, 0.8);
-  text-shadow: 1px 1px 2px #323a45;
-  line-height: 3.5rem;
+  text-shadow: 1px 1px 6px #323a45;
+  line-height: 3.8rem;
 }
 
 div.home .arrow, div.bid .arrow, div.price .arrow {
@@ -337,7 +337,7 @@ a {
 
 button.arrow {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   right: 20px;
   z-index: 20;
 
@@ -358,3 +358,5 @@ img.arrow-up {
   z-index: 10;
   opacity: 0.8;
 }
+
+span {color: #463058;}

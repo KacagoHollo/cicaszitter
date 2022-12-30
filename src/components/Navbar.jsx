@@ -69,7 +69,7 @@ const Navbar = () => {
                 <button 
                     onClick={() => nav('/arak')}
                     >
-                    Árak
+                    Szolgáltatás / Árak
                 </button>
                 <button 
                     onClick={() => nav('/arajanlat')}

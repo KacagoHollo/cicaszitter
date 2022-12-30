@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-import yarn from '../pictures/yarn.png';
 import paws from '../pictures/paws.png';
 import arrow from '../pictures/arrow.png';
 
@@ -22,54 +21,40 @@ function Home() {
       ) :
         (
           <>
-            <p>A kitöltött és elküldött jelentkezési lap megérkezése után rövid időn belül telefonon felveszem a kapcsolatot önökkel. Természetesen ha részletesebben szeretne tájékozódni akkor telefonon is tudunk válaszolni minden felmerülő kérdésére.
+            <p>A kitöltött és elküldött jelentkezési lap megérkezése után rövid időn belül telefonon felveszem a kapcsolatot önökkel. Természetesen ha részletesebben szeretne tájékozódni, akkor telefonon is tudunk válaszolni minden felmerülő kérdésére.
             </p>
             <br />
             <p>
-            Megbeszéljük az első találkozást ahol megtudok minden fontos dolgot a cicusról. A munkám lényege, hogy a cicus ugyanabba az ellátásba részesüljön mint ha a gazdi otthon lenne. Sikeres egyeztetés követően megírjuk a szerződést és átveszem a lakáskulcsot. A találkozó természetesen díjmentes.
+            Megbeszéljük az első találkozást, ahol meg tudok minden fontos dolgot a cicusról. A munkám lényege, hogy a cicus ugyanabba az ellátásban részesüljön, mint ha a gazdi otthon lenne. Sikeres egyeztetést követően megírjuk a szerződést és átveszem a lakáskulcsot. A találkozó természetesen díjmentes.
             </p>
           </>
         )
       }
       
-      {/* <button className='yarn'>
-      <img className='yarn-y'
-                    style={{
-                        width: '200px',
-                    }}
-                    src={yarn} alt="yarn" 
-                />
-      </button> */}
-{hiddenH ? (
-  <button 
-  className='arrow'
-  onClick={() => setHiddenH(!hiddenH)}
-  style={{
-    width: '8vw',
-    }}
-  >      
-        <img className='arrow-up'
-            // style={{
-            //         width: '5vw',
-            //         }}
-            src={arrow} alt="paws" 
-        /> 
-  </button>
-  ) :
-  <button 
-  className='arrowW'
-  onClick={() => setHiddenH(!hiddenH)}
-  style={{
-    width: '8vw',
-    }}
-  >      
-        <img className='arrow-up'
-            // style={{
-            //         width: '5vw',
-            //         }}
-            src={arrow} alt="paws" 
-        /> 
-  </button>
+      {hiddenH ? (
+        <button 
+        className='arrow'
+        onClick={() => setHiddenH(!hiddenH)}
+        style={{
+          width: '8vw',
+          }}
+        >      
+              <img className='arrow-up'
+                  src={arrow} alt="paws" 
+              /> 
+        </button>
+        ) :
+        <button 
+        className='arrowW'
+        onClick={() => setHiddenH(!hiddenH)}
+        style={{
+          width: '8vw',
+          }}
+        >      
+              <img className='arrow-up'
+                  src={arrow} alt="paws" 
+              /> 
+        </button>
 }
 
 
