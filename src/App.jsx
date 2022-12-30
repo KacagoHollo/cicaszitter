@@ -23,9 +23,9 @@ function App() {
         </Routes>
       <img 
         className='background'
-        style={{ 
-        width: '30%',
-        }} 
+        // style={{ 
+        // width: '30%',
+        // }} 
         src={background}
         alt="Cat Bacground Pic"
       />

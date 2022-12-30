@@ -16,14 +16,36 @@ const Navbar = () => {
         navigate(path);
     }
   return (
-    <nav className='navbar'>
-        <img className='cat-1' src={cat1} alt="cat1" />
-        <div className='left'>
+    <>
+            <img className='cat-1' src={cat1} alt="cat1" />
+    <div className='left'>
             <h1>
                 Lusta Macska Cicaszitter
             </h1>
+    </div>
+
+    <nav className='navbar'>
+    <button 
+            className='paw' 
+            onClick={() => setHidden(!hidden)}
+        >
+            <h1>Menü</h1>
+           {hidden ? 
+                (<img className='black-paw'
+                    style={{
+                        width: '300px',
+                    }}
+                    src={blackPaw} alt="black" 
+                />) :
+                (<img className='orange-paw'
+                    style={{
+                        width: '300px',
+                    }}
+                    src={orangePaw} alt="black" 
+                />)
+                 }  
+        </button>
             
-        </div>
         {hidden ? ""
         // (
         // <div className='left-right'>
@@ -56,32 +78,9 @@ const Navbar = () => {
                 </button>
             </div>
         }
-        <button 
-            // style={{ background: `url(${orangePaw})`,
-            //     backgroundRepeat: 'no-repeat',
-            //     width: '50px',
-            //     height: '50px' 
-            
-            // }}
-            className='paw' 
-            onClick={() => setHidden(!hidden)}
-        >
-           {hidden ? 
-                (<img className='black-paw'
-                    style={{
-                        width: '110px',
-                    }}
-                    src={blackPaw} alt="black" 
-                />) :
-                (<img className='orange-paw'
-                    style={{
-                        width: '110px',
-                    }}
-                    src={orangePaw} alt="black" 
-                />)
-                 }  
-        </button>
+                    
     </nav>
+    </>
   )
 }
 
