@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
+import TextField from "@mui/material/TextField";
+
 
 function Bid() {
 
@@ -33,38 +35,47 @@ function Bid() {
 
   return (
     <div className='bid'>
-      <h1>Árajánlat</h1>
+      <h1>Árajánlat kérése</h1>
 
       <form onSubmit={onSubmit}>
-    <input
+    <TextField
+      id='input1'
       type='text'
       name='from_name'
-      placeholder='from name'
+      placeholder='Megrendelő neve'
+      label='Megrendelő neve'
       value={toSend.from_name}
       onChange={handleChange}
+      variant="filled"
+      required
+      helperText='Kötelező mező'
     />
-    <input
+    <TextField
+      id='input2'
       type='text'
       name='to_name'
       placeholder='to name'
       value={toSend.to_name}
       onChange={handleChange}
     />
-    <input
+    <TextField
+      id='input3'
       type='text'
       name='message'
       placeholder='Your message'
       value={toSend.message}
       onChange={handleChange}
     />
-    <input
+    <TextField
+      id='input4'
       type='text'
       name='question'
       placeholder='Your question'
       value={toSend.question}
       onChange={handleChange}
     />
-    <input
+    <TextField
+      id='input5'
       type='text'
       name='reply_to'
       placeholder='Your email'
