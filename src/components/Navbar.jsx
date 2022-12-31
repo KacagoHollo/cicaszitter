@@ -17,8 +17,10 @@ const Navbar = () => {
     }
   return (
     <>
+        <div className='catbox'>
             <img className='cat-1' src={cat1} alt="cat1" />
-    <div className='left'>
+        </div>
+        <div className='left'>
             <h1>
                 Lusta Macska Cicaszitter
             </h1>

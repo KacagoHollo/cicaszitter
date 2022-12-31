@@ -175,6 +175,14 @@ div.left h1 {
 
 }
 
+div.catbox {
+  grid-area: header1;
+  align-self: center;
+
+  display:block;
+  position:relative;
+}
+
 img.cat-1 {
   /* position: absolute; */
   /* left: 50px; */
@@ -182,14 +190,19 @@ img.cat-1 {
   z-index: 1;
   border-radius: 15px;
   /* box-shadow: 0 0 30px #9eada8; */
-  box-shadow: inset -10px -10px 10px 20px inherit;
-
-  grid-area: header1;
-  align-self: center;
-
+  box-shadow: 25px 25px 50px 0 inherit inset, -25px -25px 50px 0 inherit inset;
 }
 
-
+div.catbox:before {
+  display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(138, 86, 78, 1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(138, 86, 78, 1);
+    box-shadow:inset 0px 0px 6px 6px rgba(138, 86, 78, 1);
+}
 
 main {
   position: relative;

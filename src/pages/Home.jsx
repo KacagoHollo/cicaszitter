@@ -17,6 +17,8 @@ function Home() {
         <p>
         Minden nap a megszokott időben kapják meg a kedvenc cica kajájukat, friss vizüket, kitisztítom az almukat és persze a játék sem maradhat el. Szükség szerint ki is szellőztetek, illetve ki is ürítem a postaládát.
         </p>
+        <br />
+        <p>...</p>
       </>
       ) :
         (
