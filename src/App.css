@@ -273,6 +273,15 @@ form {
   row-gap: 10px;
 }
 
+form h2.category {
+  font-size: 2rem;
+  font-family: 'Andika', sans-serif;
+  font-weight: 700;
+  color: #463058;
+  text-align: left;
+  text-shadow: 2px 2px 9px #323a45;
+}
+
 form div div {
   width: 70%;
 }
@@ -302,7 +311,7 @@ button.submit {
 
 .cat-button {
   width: 60%;
-  filter: invert(0.3);
+  filter: invert(0.6);
 }
 
 .submit:hover {
@@ -358,7 +367,7 @@ img.background {
   /* margin-top: 90px; */
   opacity: 0.7;
   overflow: hidden;
-
+  z-index: 10;
   width: 45%;
 }
 
@@ -459,3 +468,58 @@ img.arrow-up {
 }
 
 span {color: #463058;}
+
+.thank {
+  z-index: 999;
+  position: absolute;
+  top: -42%;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: rgb(199,144,103);
+  background: -moz-radial-gradient(circle, rgba(199,144,103,1) 20%, rgba(144,81,50,1) 70%, rgba(129,94,119,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(199,144,103,1) 20%, rgba(144,81,50,1) 70%, rgba(129,94,119,1) 100%);
+  background: radial-gradient(circle, rgba(199,144,103,1) 20%, rgba(144,81,50,1) 70%, rgba(129,94,119,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c79067",endColorstr="#815e77",GradientType=1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  font-size: 4rem;
+  font-family: 'Chicle', cursive;
+  letter-spacing: 0.4rem;
+  color: #463058;
+  font-weight: 400;
+  text-shadow: 2px 2px 3px #323a45;
+
+}
+
+h1.second {
+  font-size: 5.5rem;
+}
+
+div.meow {
+  display:block;
+  position:relative;
+  width: 800px;
+}
+
+img.waiting {
+  border-radius: 15px;
+  width: 100%;
+}
+
+div.meow:before {
+  display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(199,144,103,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(199,144,103,1);
+    box-shadow:inset 0px 0px 8px 8px rgba(199,144,103,1);
+}

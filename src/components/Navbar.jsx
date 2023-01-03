@@ -4,11 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import cat1 from '../pictures/cat1.jpg';
 import blackPaw from '../pictures/paw_black.png';
 import orangePaw from '../pictures/paw_black.png';
-import paws from '../pictures/paws.png';
 
 const Navbar = () => {
     const [hidden, setHidden] = useState(true);
-
 
     const navigate = useNavigate();
     const nav = (path) => {

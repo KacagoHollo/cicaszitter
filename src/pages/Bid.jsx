@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { send } from 'emailjs-com';
 import TextField from "@mui/material/TextField";
 import Typography from '@mui/material/Typography';
@@ -6,6 +7,12 @@ import Typography from '@mui/material/Typography';
 import gomb from '../pictures/gomb.png';
 
 function Bid() {
+
+  const navigate = useNavigate();
+    const nav = (path) => {
+        console.log('rerouting');
+        navigate(path);
+    }
 
   const [toSend, setToSend] = useState({
     from_name: '', //1
@@ -37,6 +44,7 @@ function Bid() {
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        nav('/siker')
       })
       .catch((err) => {
         console.log('FAILED...', err);
@@ -60,7 +68,7 @@ function Bid() {
       placeholder='Megrendelő neve'
       inputProps={{
         style: {
-          height: "80px",
+          height: "60px",
         }
       }}
       label={
@@ -69,7 +77,8 @@ function Bid() {
       value={toSend.from_name}
       onChange={handleChange}
       variant="filled"
-      helperText='Kötelező mező'
+      // helperText='Kötelező mező'
+      color='warning'
     />
     <TextField
       id='input2'
@@ -78,7 +87,7 @@ function Bid() {
       placeholder='Helyszín címe'
       inputProps={{
         style: {
-          height: "80px",
+          height: "60px",
         }
       }}
       label={
@@ -88,6 +97,7 @@ function Bid() {
       onChange={handleChange}
       variant="filled"
       required
+      color='warning'
     />
     <TextField
       id='input3'
@@ -96,7 +106,7 @@ function Bid() {
       placeholder='Telefonszám'
       inputProps={{
         style: {
-          height: "80px",
+          height: "60px",
         }
       }}
       label={
@@ -106,6 +116,7 @@ function Bid() {
       onChange={handleChange}
       variant="filled"
       required
+      color='warning'
     />
     <TextField
       id='input4'
@@ -114,7 +125,7 @@ function Bid() {
       placeholder='E-mail cím'
       inputProps={{
         style: {
-          height: "80px",
+          height: "60px",
         }
       }}
       label={
@@ -123,6 +134,7 @@ function Bid() {
       value={toSend.question}
       onChange={handleChange}
       variant="filled"
+      color='warning'
     />
     <br />
     <TextField
@@ -134,13 +146,14 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Gondozás első napja </Typography>
       }
       variant="filled"
+      color='warning'
     />
     <TextField
       id='input6'
@@ -151,13 +164,14 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Gondozás utolsó napja </Typography>
       }
       variant="filled"
+      color='warning'
     />
     <TextField
       id='input7'
@@ -168,7 +182,7 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
@@ -176,9 +190,9 @@ function Bid() {
       }
       variant="filled"
       helperText='Pl.'
-
+      color='warning'
     />
-    <h2>Cica/Cicák adatai</h2>
+    <h2 className='category'>Cica/Cicák adatai</h2>
     <TextField
       id='input8'
       type='text'
@@ -188,13 +202,14 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák száma </Typography>
       }
       variant="filled"
+      color='warning'
     />
     <TextField
       id='input9'
@@ -205,13 +220,14 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák neve </Typography>
       }
       variant="filled"
+      color='warning'
     />
     
     <TextField
@@ -223,13 +239,14 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák kora </Typography>
       }
       variant="filled"
+      color='warning'
     />
     <TextField
       id='input11'
@@ -240,13 +257,14 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák neme </Typography>
       }
       variant="filled"
+      color='warning'
     />
     <TextField
       id='input12'
@@ -257,15 +275,16 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák étkezési szabályai </Typography>
       }
       variant="filled"
+      color='warning'
     />
-    <h2>Egyéb infó</h2>
+    <h2 className='category'>Egyéb infó</h2>
     <TextField
       id='input13'
       type='text'
@@ -275,13 +294,14 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Növény locsolás </Typography>
       }
       variant="filled"
+      color='warning'
     />
     <TextField
       id='input14'
@@ -292,15 +312,16 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Postaláda ürítés </Typography>
       }
       variant="filled"
+      color='warning'
     />
-    <h2>Számlázási adatok</h2>
+    <h2 className='category'>Számlázási adatok</h2>
     <TextField
       id='input15'
       type='text'
@@ -311,7 +332,7 @@ function Bid() {
       // onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
@@ -319,6 +340,7 @@ function Bid() {
       }
       variant="filled"
       disabled
+      color='warning'
     />
     <TextField
       id='input16'
@@ -329,13 +351,14 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Számlázási név </Typography>
       }
       variant="filled"
+      color='warning'
     />
     <TextField
       id='input17'
@@ -346,18 +369,21 @@ function Bid() {
       onChange={handleChange}
       inputProps={{
         style: {
-          height: "60px",
+          height: "50px",
         }
       }}
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> Számlázási cím </Typography>
       }
       variant="filled"
+      color='warning'
     />
 
     <button  
       type='submit'
       className='submit'
+      // onClick={() => nav('/siker')}
+      
     >
       <h2>Elküld</h2>
       <img className='cat-button'
@@ -370,16 +396,3 @@ function Bid() {
 }
 
 export default Bid;
-
-// last_day: '',
-//     feeding: '',
-//     number: '',
-//     name
-//     age: '',
-//     sex: '', 
-//     dietary: '',
-//     plant: '',
-//     mailbox: '',
-//     payment: '',
-//     billing_name: '',
-//     billing_address: ''

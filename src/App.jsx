@@ -8,6 +8,7 @@ import Price from './pages/Price';
 
 import background from './pictures/backcat.png'
 import fb from './pictures/fb.png'
+import LoadingMask from './components/LoadingMask';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/arak' element={<Price />}/>
           <Route path='/arajanlat' element={<Bid />}/>
+          <Route path='/siker' element={<LoadingMask />}/>
         </Routes>
       <img 
         className='background'
