@@ -42,9 +42,9 @@ function Bid() {
       toSend,
       'OvK2rMIAAgvQVhCEN'
     )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        nav('/siker')
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      nav('/siker')
       })
       .catch((err) => {
         console.log('FAILED...', err);
