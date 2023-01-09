@@ -5,6 +5,7 @@ import TextField from "@mui/material/TextField";
 import Typography from '@mui/material/Typography';
 
 import gomb from '../pictures/gomb.png';
+import info from '../pictures/info.png';
 
 function Bid() {
 
@@ -13,6 +14,18 @@ function Bid() {
         console.log('rerouting');
         navigate(path);
     }
+
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseOver = (e) => {
+      e.preventDefault();
+      setIsHovering(true);
+    };
+  
+    const handleMouseOut = (e) => {
+      e.preventDefault();
+      setIsHovering(false);
+    };
 
   const [toSend, setToSend] = useState({
     from_name: '', //1
@@ -55,6 +68,16 @@ function Bid() {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
+  const validateEmail = (e) => {
+    const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (regex.test({ ...toSend, [e.target.name]: e.target.value }) === false )
+     {
+      alert("You are writing invalid email address!")
+      return (false)
+     }
+       return (true)
+   }
+
   return (
     <div className='bid'>
       <h1>Árajánlat kérése</h1>
@@ -80,6 +103,7 @@ function Bid() {
       // helperText='Kötelező mező'
       color='warning'
     />
+
     <TextField
       id='input2'
       type='text'
@@ -132,9 +156,10 @@ function Bid() {
         <Typography variant="headline" component="h2" color={'whitesmoke'}> E-mail cím </Typography>
       }
       value={toSend.question}
-      onChange={handleChange}
+      onChange={validateEmail}
       variant="filled"
       color='warning'
+      required
     />
     <br />
     <TextField
@@ -154,6 +179,7 @@ function Bid() {
       }
       variant="filled"
       color='warning'
+      required
     />
     <TextField
       id='input6'
@@ -172,26 +198,49 @@ function Bid() {
       }
       variant="filled"
       color='warning'
+      required
     />
-    <TextField
-      id='input7'
-      type='text'
-      name='feeding'
-      placeholder='Etetés ideje'
-      value={toSend.feeding}
-      onChange={handleChange}
-      inputProps={{
-        style: {
-          height: "50px",
+    {/* <div className='feed'> */}
+      <div 
+      className='info'
+      onMouseOver={handleMouseOver} 
+      onMouseOut={handleMouseOut}
+      >
+        {isHovering && <p className='hover'>
+          például: 
+          <ul>
+            <li>- délelőtt: 8-12 óra között</li>
+            <li>- kora délután: 12-16 óra között</li>
+            <li>- késő délután: 16-20 óra között</li>
+            <li>- bármikor: 8-20 óra között</li>
+          </ul>     
+        </p>}
+        <img className='inf'
+                      style={{
+                        width: '60%',
+                      }}
+                      src={info} alt="black" 
+                      />
+      </div>
+      <TextField
+        id='input7'
+        type='text'
+        name='feeding'
+        placeholder='Etetés ideje'
+        value={toSend.feeding}
+        onChange={handleChange}
+        inputProps={{
+          style: {
+            height: "50px",
+          }
+        }}
+        label={
+          <Typography variant="headline" component="h2" color={'whitesmoke'}> Etetés ideje </Typography>
         }
-      }}
-      label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Etetés ideje </Typography>
-      }
-      variant="filled"
-      helperText='Pl.'
-      color='warning'
-    />
+        variant="filled"
+        color='warning'
+      />
+    {/* </div> */}
     <h2 className='category'>Cica/Cicák adatai</h2>
     <TextField
       id='input8'

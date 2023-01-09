@@ -28,16 +28,10 @@ function LoadingMask() {
         <h1 className='second'>Hamarosan felvesszük Önnel a kapcsolatot!</h1>
         <div className='meow'>
             <img className='waiting'
-                        // style={{
-                        //     width: '800px',
-                        // }}
                         src={waiting} alt="black" 
                     />
         </div>
         <img className='mpaws'
-                        // style={{
-                        //     width: '800px',
-                        // }}
                         src={mpaws} alt="black" 
                     />
     </div>

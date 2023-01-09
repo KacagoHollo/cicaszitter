@@ -32,6 +32,12 @@ function Price() {
         <p>
         A szolgáltatás ezekben a kerületekben érhető el: I., II., III.,V., VI., VII. valamint a VIII., IX., X., XI., XII., XIII., XIV. kerületek egyes részein tudok házhoz menni, ezekről egyeztetni kell.
         </p>
+        <br />
+        <ul className='contact'>
+          <u className='cTitle'>Elérhetőségeink:</u> 
+          <li>- +36 ... ....</li>
+          <li>- lustamacskacicaszitter@gmail.com</li>
+        </ul>
       </>
       ) :
         (

@@ -186,7 +186,7 @@ div.catbox {
 img.cat-1 {
   /* position: absolute; */
   /* left: 50px; */
-  height: 300px;
+  height: 400px;
   z-index: 1;
   border-radius: 25px;
   /* box-shadow: 0 0 30px #9eada8; */
@@ -277,7 +277,7 @@ form h2.category {
   font-size: 2rem;
   font-family: 'Andika', sans-serif;
   font-weight: 700;
-  color: #463058;
+  color: #9eada8;
   text-align: left;
   text-shadow: 2px 2px 9px #323a45;
 }
@@ -301,6 +301,47 @@ fieldset {
   font-family: 'Andika', sans-serif;
   font-weight: 700;
 
+}
+
+
+form div.feed div {
+  position: relative;
+  width: 70%;
+}
+
+#input7 {
+  width: 100%;
+}
+
+div.info {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  top: 55%;
+  left: -4%
+}
+
+div.info:hover {
+  cursor: pointer;
+}
+
+p.hover {
+  position: absolute;
+  max-width: 14vw;
+  min-width: 10vw;
+  /* top: 54%;
+  left: -17% */
+  margin-left: -400px;
+  /* margin-bottom: 250px; */
+  background-color:#9eada8;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
+
+  font-size: 1.5rem !important;
+  color: #463058 !important;
+  line-height: 2.3rem !important;
 }
 
 button.submit {
@@ -359,8 +400,35 @@ div.home p, div.bid p, div.price p, div.price ul {
   line-height: 3.8rem;
 }
 
+div.price p {
+  line-height: 3.6rem;
+}
+
+div.price ul {
+  line-height: 3.3rem;
+}
+
+ul.contact {
+  color: #463058 !important;
+  font-weight: 400;
+  text-align: justify !important;
+  text-shadow: 1px 1px 2px #9eada8 !important;
+}
+
+/* u.cTitle {
+  border-bottom: #323a45;
+  width: 100%;
+  height: 100%;
+} */
 div.home .arrow, div.bid .arrow, div.price .arrow {
   justify-content: flex-end ;
+}
+
+div.price {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 6px;
 }
 
 img.background {
