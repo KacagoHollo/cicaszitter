@@ -242,7 +242,7 @@ div.home, div.price {
 div.bid {
   position: absolute;
   top: 200px;
-  width: 100%;
+  width: 130%;
   height: 100%;
 
   grid-column: 2/4;
@@ -297,7 +297,7 @@ fieldset {
 #input1, #input2, #input3, #input4, #input5,
 #input6, #input7, #input8, #input9, #input10,
 #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-family: 'Andika', sans-serif;
   font-weight: 700;
 
@@ -318,8 +318,8 @@ div.info {
   width: 50px;
   height: 50px;
 
-  top: 55%;
-  left: -4%
+  top: 56%;
+  left: -3%
 }
 
 div.info:hover {
@@ -603,4 +603,11 @@ img.waiting {
   overflow: hidden;
   z-index: 10;
   width: 100%;
+}
+
+/* Responsive settings */
+@media all and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
 }

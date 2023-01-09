@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
@@ -10,11 +11,11 @@ import background from './pictures/backcat.png'
 import fb from './pictures/fb.png'
 import LoadingMask from './components/LoadingMask';
 
+
 function App() {
+  
   return (
     <div className="App"> 
-      
-      
       <Navbar/>
       <main >
         <Routes>

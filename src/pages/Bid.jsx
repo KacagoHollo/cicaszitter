@@ -7,7 +7,17 @@ import Typography from '@mui/material/Typography';
 import gomb from '../pictures/gomb.png';
 import info from '../pictures/info.png';
 
+
+import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
+import * as locales from '@mui/material/locale';
+
 function Bid() {
+  const [locale, setLocale] = React.useState('huHU');
+  const theme = useTheme();
+  const themeWithLocale = React.useMemo(
+  () => createTheme(theme, locales[locale]),
+    [locale, theme],
+  );
 
   const navigate = useNavigate();
     const nav = (path) => {
@@ -16,6 +26,7 @@ function Bid() {
     }
 
     const [isHovering, setIsHovering] = useState(false);
+    const [message, setMessage] = useState("");
 
     const handleMouseOver = (e) => {
       e.preventDefault();
@@ -68,17 +79,19 @@ function Bid() {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
-  const validateEmail = (e) => {
-    const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    if (regex.test({ ...toSend, [e.target.name]: e.target.value }) === false )
-     {
-      alert("You are writing invalid email address!")
-      return (false)
-     }
-       return (true)
-   }
+  // const validateEmail = (e) => {
+  //   let email = e.target.value;
+
+  //   if (email) {
+  //     setToSend({ ...toSend, [e.target.name]: e.target.value });
+  //     setMessage("Thank you");
+  //   } else {
+  //     setMessage("Please, enter valid Email!");
+  //   }
+  //  }
 
   return (
+     <ThemeProvider theme={themeWithLocale}>
     <div className='bid'>
       <h1>Árajánlat kérése</h1>
       <br />
@@ -125,7 +138,7 @@ function Bid() {
     />
     <TextField
       id='input3'
-      type='text'
+      type='tel'
       name='phone'
       placeholder='Telefonszám'
       inputProps={{
@@ -144,7 +157,7 @@ function Bid() {
     />
     <TextField
       id='input4'
-      type='text'
+      type='email'
       name='email'
       placeholder='E-mail cím'
       inputProps={{
@@ -155,16 +168,24 @@ function Bid() {
       label={
         <Typography variant="headline" component="h2" color={'whitesmoke'}> E-mail cím </Typography>
       }
-      value={toSend.question}
-      onChange={validateEmail}
+      value={toSend.email}
+      onChange={handleChange}
       variant="filled"
       color='warning'
       required
     />
+     <span
+        style={{
+          fontWeight: "bold",
+          color: "red"
+        }}
+      >
+        {message}
+      </span>
     <br />
     <TextField
       id='input5'
-      type='text'
+      type='date'
       name='first_day'
       placeholder='Gondozás első napja'
       value={toSend.first_day}
@@ -183,7 +204,7 @@ function Bid() {
     />
     <TextField
       id='input6'
-      type='text'
+      type='date'
       name='last_day'
       placeholder='Gondozás utolsó napja'
       value={toSend.last_day}
@@ -199,6 +220,7 @@ function Bid() {
       variant="filled"
       color='warning'
       required
+      locale='huHU'
     />
     {/* <div className='feed'> */}
       <div 
@@ -244,7 +266,7 @@ function Bid() {
     <h2 className='category'>Cica/Cicák adatai</h2>
     <TextField
       id='input8'
-      type='text'
+      type='number'
       name='number'
       placeholder='Ellátott cicák száma'
       value={toSend.number}
@@ -441,6 +463,7 @@ function Bid() {
     </button>
   </form>
     </div>
+    </ThemeProvider>
   )
 }
 
