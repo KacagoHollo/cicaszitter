@@ -12,7 +12,7 @@ function Price() {
       <> 
         <h1>Szolgáltatás</h1>
         <p>
-        A látogatási idő 35-40perc.
+        A látogatási idő 35-40 perc.
         </p>
         <br />
         <p>

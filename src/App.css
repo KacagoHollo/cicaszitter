@@ -309,9 +309,9 @@ form div.feed div {
   width: 70%;
 }
 
-#input7 {
+/* #input7 {
   width: 100%;
-}
+} */
 
 div.info {
   position: absolute;
@@ -606,8 +606,314 @@ img.waiting {
 }
 
 /* Responsive settings */
-@media all and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
+
+@media all and (max-width: 1920px) {
+  nav.navbar {
+    width: 100%;
+    margin: 0;
+    padding-right: 0;
+  }
+
+  main {
+    gap: 3vw;
+  }
+  div.right {
+    gap: 120px;
+  }
+  div.right button {
+    /* transform: scale(0.9); */
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    line-height: 50px;
+    transform: scale(0.9, 1.2);
+  }
+  button.paw {
+    top: 0;
+    transform: scale(0.6);
+  }
+
+  img.cat-1 {
+    height: 230px;
+  }
+
+  div.left h1 {
+    font-size: 6rem;
+  }
+  div.home, div.price {
+    padding: 20px 20px 40px 20px;
+    margin-top: 40px;
+  }
+  div.home p, div.price p, div.price ul {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  div.home h1, div.price h1, div.bid h1 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+  div.bid {
+    top: 100px;
+    width: 80%;
+  }
+
+  div.bid h1 {
+    top: -12%;
+  }
+
+  form {
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+
+  form div {
+    transform: scale(1, 0.9);
+  }
+
+  #input1, #input2, #input3, #input4, #input5,
+  #input6, #input7, #input8, #input9, #input10,
+  #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
+    padding: 0;
+    /* transform: scale(0.8, 0.7); */
+    font-size: 1.5rem;
+  }
+
+  .label {
+    line-height: 1rem;
+    font-size: 0.7rem;
+    /* padding-bottom: 50px !important;
+    padding-right: 100px; */
+    /* transform: translate(-10%, -20%); */
+    overflow: visible;
+    z-index: 999;
+    /* transform: scale(1, 1); */
+
+  }
+  
+  button.submit {
+    width: 30%;
+  }
+
+  .submit h2 {
+    font-size: 2rem;
+  }
+
+  .fb {
+    height: 120px;
+  }
+
+  div.info {
+    top: 59%;
+    left: -4%;
+  }
+  img.inf {
+    width: 30% !important;
+  }
+  p.hover {
+    position: absolute;
+    max-width: 12vw;
+    min-width: 10vw;
+    margin-left: -220px;
+    padding: 10px;
+    font-size: 1rem !important;
+    line-height: 1.6rem !important;
+  }
+}
+
+@media all and (max-width: 1600px) {
+  div.left h1 {
+    font-size: 5rem;
+  }
+  img.cat-1 {
+    height: 180px;
+  }
+  img.fb {
+    height: 90px;
+  }
+  button.paw {
+    top: -40px;
+    transform: scale(0.5);
+  }
+  div.right {
+    gap: 100px;
+  }
+  div.right button {
+    transform: scale(1, 1.2);
+    font-size: 2.1rem;
+  }
+   div.right button:nth-child(1) {
+    margin-top: 150px;
+  } 
+
+  div.home p, div.price p, div.price ul {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  div.home h1, div.price h1, div.bid h1 {
+    font-size: 2.3rem;
+    padding-bottom: 20px;
+  }
+  div.price ul {
+    line-height: 1.4rem;
+  }
+
+  button.arrow {
+    bottom: -8px;
+  }
+
+  h2.category {
+    font-size: 1rem !important;
+  }
+  button.submit {
+    width: 22%;
+  }
+  button.submit h2{
+    font-size: 1.1rem;
+  }
+  form {
+    column-gap: 0px;
+    row-gap: 0px;
+  }
+
+  form div {
+    transform: scale(1, 0.9);
+  }
+  div.bid {
+    height: 76%;
+  }
+  #input1, #input2, #input3, #input4, #input5,
+  #input6, #input7, #input8, #input9, #input10,
+  #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+
+  h1.first {
+    margin-top: 60px;
+   font-size: 5rem;
+  }
+  h1.second {
+    font-size: 3rem;
+  }
+  div.meow {
+    margin: 0;
+  }
+  div.info {
+    top: 59%;
+    left: -5%;
+  }
+  img.inf {
+    width: 30% !important;
+  }
+  div.info {
+    top: 91%;
+  }
+  p.hover {
+    position: absolute;
+    max-width: 12vw;
+    min-width: 10vw;
+    margin-left: -180px;
+    margin-top: -40px;
+    padding: 10px;
+    font-size: 1rem !important;
+    line-height: 1.6rem !important;
+  }
+}
+
+@media all and (max-width: 1450px) {
+  div.right button {
+    font-size: 1.8rem;
+  }
+}
+
+@media all and (max-width: 1370px) and (max-height: 770px) {
+  div.left h1 {
+    font-size: 4.2rem;
+  }
+  img.cat-1 {
+    height: 150px;
+  }
+  img.fb {
+    height: 70px;
+  }
+  button.paw {
+    top: -40px;
+    transform: scale(0.45);
+  }
+  div.right {
+    gap: 70px;
+  }
+  div.right button {
+    transform: scale(1, 1.2);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+   div.right button:nth-child(1) {
+    margin-top: 150px;
+  } 
+
+  div.home p, div.price p, div.price ul {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+  div.home h1, div.price h1, div.bid h1 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  div.price ul {
+    line-height: 1.1rem;
+  }
+
+  button.arrow {
+    bottom: -8px;
+  }
+
+  h2.category {
+    font-size: 1rem !important;
+  }
+  button.submit {
+    width: 22%;
+  }
+  button.submit h2{
+    font-size: 0.9rem;
+  }
+  form {
+    row-gap: 1px;
+  }
+  form div {
+    transform: scale(1, 0.9);
+  }
+  div.bid {
+    height: 76%;
+  }
+  #input1, #input2, #input3, #input4, #input5,
+  #input6, #input7, #input8, #input9, #input10,
+  #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
+    padding-left: 10px;
+    font-size: 0.8rem;
+    height: 40px !important;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    letter-spacing: 0.1rem;
+  }
+
+  .label {
+    width: 250px;
+    height:15px;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    text-align: left;
+  }
+
+
+  h1.first {
+    margin-top: 60px;
+   font-size: 5rem;
+  }
+  h1.second {
+    font-size: 3rem;
+  }
+  div.meow {
+    margin: 0;
+  }
 }

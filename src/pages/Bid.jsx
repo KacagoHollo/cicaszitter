@@ -67,8 +67,8 @@ function Bid() {
       'OvK2rMIAAgvQVhCEN'
     )
     .then((response) => {
-      console.log('SUCCESS!', response.status, response.text);
       nav('/siker')
+      console.log('SUCCESS!', response.status, response.text);
       })
       .catch((err) => {
         console.log('FAILED...', err);
@@ -108,7 +108,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Megrendelő neve </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Megrendelő neve </Typography>
       }
       value={toSend.from_name}
       onChange={handleChange}
@@ -128,7 +128,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Helyszín címe </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Helyszín címe </Typography>
       }
       value={toSend.address}
       onChange={handleChange}
@@ -147,7 +147,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Telefonszám </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Telefonszám </Typography>
       }
       value={toSend.phone}
       onChange={handleChange}
@@ -166,7 +166,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> E-mail cím </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> E-mail cím </Typography>
       }
       value={toSend.email}
       onChange={handleChange}
@@ -196,7 +196,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Gondozás első napja </Typography>
+        <Typography className='label' align='left' variant="headline" component="h2" color={'whitesmoke'}> Gondozás első napja </Typography>
       }
       variant="filled"
       color='warning'
@@ -215,7 +215,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Gondozás utolsó napja </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Gondozás utolsó napja </Typography>
       }
       variant="filled"
       color='warning'
@@ -257,7 +257,7 @@ function Bid() {
           }
         }}
         label={
-          <Typography variant="headline" component="h2" color={'whitesmoke'}> Etetés ideje </Typography>
+          <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Etetés ideje </Typography>
         }
         variant="filled"
         color='warning'
@@ -277,7 +277,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák száma </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák száma </Typography>
       }
       variant="filled"
       color='warning'
@@ -295,7 +295,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák neve </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák neve </Typography>
       }
       variant="filled"
       color='warning'
@@ -314,7 +314,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák kora </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák kora </Typography>
       }
       variant="filled"
       color='warning'
@@ -332,7 +332,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák neme </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák neme </Typography>
       }
       variant="filled"
       color='warning'
@@ -350,7 +350,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák étkezési szabályai </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Ellátott cicák étkezési szabályai </Typography>
       }
       variant="filled"
       color='warning'
@@ -369,7 +369,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Növény locsolás </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Növény locsolás </Typography>
       }
       variant="filled"
       color='warning'
@@ -387,7 +387,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Postaláda ürítés </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Postaláda ürítés </Typography>
       }
       variant="filled"
       color='warning'
@@ -407,7 +407,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Fizetési mód </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Fizetési mód </Typography>
       }
       variant="filled"
       disabled
@@ -426,7 +426,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Számlázási név </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Számlázási név </Typography>
       }
       variant="filled"
       color='warning'
@@ -444,7 +444,7 @@ function Bid() {
         }
       }}
       label={
-        <Typography variant="headline" component="h2" color={'whitesmoke'}> Számlázási cím </Typography>
+        <Typography className='label' variant="headline" component="h2" color={'whitesmoke'}> Számlázási cím </Typography>
       }
       variant="filled"
       color='warning'
