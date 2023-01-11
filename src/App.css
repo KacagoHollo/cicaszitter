@@ -936,6 +936,229 @@ img.waiting {
   div.meow {
     margin: 0;
   }
+}
 
+@media all and (max-width: 1200px) {
+  div.left h1 {
+    font-size: 3.5rem;
+  }
+  img.cat-1 {
+    height: 140px;
+  }
+  img.fb {
+    height: 60px;
+  }
+  button.paw {
+    top: -40px;
+    transform: scale(0.40);
+  }
 
+  div.right button {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+  div.home p, div.price p, div.price ul {
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+  }
+  div.home h1, div.price h1, div.bid h1 {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+  }
+  div.price ul {
+    line-height: 1.2rem;
+  }
+  div.bid {
+    height: 72%;
+  }
+  h2.category {
+    font-size: 0.8rem !important;
+  }
+  button.submit {
+    width: 25%;
+  }
+
+  img.cat-button {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .App {
+    grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
+  }
+  div.left {
+    grid-column: 2/4;
+  }
+  main {
+    gap: 5vw;
+  }
+  img.paws-home {
+    left: 10%;
+    top: 40%;
+    transform: scale(2.3);
+  }
+  div.price {
+    padding: 20px 10px 40px 10px;
+  }
+  div.bid {
+    height: 95%;
+    top: 60px;
+  }
+  form div div {
+    width: 80%;
+  }
+  button.submit {
+    width: 50%;
+    margin-top: 50px;
+  }
+  button.submit h2 {
+    font-size: 0.7rem;
+  }
+  img.cat-button {
+    width: 60%;
+  }
+
+  div.info {
+    top: 65%;
+    left: -12%;
+  }
+  p.hover {
+    max-width: 12vw;
+    min-width: 10vw;
+    margin-left: -85px;
+    margin-top: -10px;
+    padding: 10px;
+    font-size: 0.6rem !important;
+    line-height: 1rem !important;
+  }
+  button.arrow {
+    bottom: -4px;
+  }
+}
+@media all and (max-width: 600px) {
+  .App {
+    grid-template-columns: 1.5fr 2.5fr 2.5fr 1.5fr;
+  }
+  div.left {
+    grid-column: 2/4;
+  }
+  div.left h1 {
+    font-size: 3rem;
+  }
+  img.cat-1 {
+    height: 120px;
+  }
+  button.paw {
+    transform: scale(0.30);
+  }
+
+  div.right button {
+    font-size: 1.5rem;
+  }
+  img.fb {
+    height: 60px;
+  }
+  main {
+    gap: 5vw;
+  }
+  img.paws-home {
+    left: 10%;
+    top: 40%;
+    transform: scale(2.3);
+  }
+
+  div.home p, div.price p, div.price ul {
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+  }
+  div.home h1, div.price h1, div.bid h1 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  div.price ul {
+    line-height: 1.2rem;
+
+  }
+
+  div.bid {
+    height: 72%;
+  }
+  h2.category {
+    font-size: 0.8rem !important;
+  }
+  div.price, div.home {
+    padding: 20px 10px 20px 10px;
+    text-indent: 0;
+    width: 60%;
+  }
+
+  ul.contact {
+    letter-spacing: 0.001rem;
+  }
+  div.bid {
+    height: 95%;
+    top: 60px;
+  }
+  form {
+    column-gap: 25px;
+    row-gap: 10px;
+  }
+
+  form div div {
+    width: 110%;
+  }
+
+  .MuiFormControl-root {
+    width: 50%;
+  }
+  .MuiTextField-root {
+    height: 40px;
+  }
+
+  button.submit {
+    width: 50%;
+    margin-top: 50px;
+  }
+  button.submit h2 {
+    font-size: 0.7rem;
+  }
+  img.cat-button {
+    width: 60%;
+  }
+
+  div.info {
+    top: 64%;
+    left: -14%;
+  }
+  p.hover {
+    margin-left: -60px;
+    margin-top: -10px;
+    padding: 5px;
+    font-size: 0.5rem !important;
+    line-height: 0.8rem !important;
+    text-align: justify;
+  }
+  button.arrow {
+    bottom: -1px;
+  }
+
+  #input1, #input2, #input3, #input4, #input5,
+  #input6, #input7, #input8, #input9, #input10,
+  #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
+    padding-left: 5px;
+    font-size: 0.6rem;
+    height: 38px !important;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px;
+    letter-spacing: 0.00004rem;
+  }
+
+  .label {
+    line-height: 1rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.00004rem;
+
+  }
 }
