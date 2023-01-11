@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cicaszitter/static/css/main.f45d946c.css",
+    "main.js": "/cicaszitter/static/js/main.4b8bf32e.js",
+    "static/media/waiting.jpg": "/cicaszitter/static/media/waiting.b7b87d62deca78213a27.jpg",
+    "static/media/cat1.jpg": "/cicaszitter/static/media/cat1.77fd3c93127c38f83fa5.jpg",
+    "static/media/manypaw.png": "/cicaszitter/static/media/manypaw.401f582f0c7f9ff0d269.png",
+    "static/media/paws.png": "/cicaszitter/static/media/paws.e1d7c16872b961a2cb41.png",
+    "static/media/backcat.png": "/cicaszitter/static/media/backcat.74bfe6880f9098623e82.png",
+    "static/media/gomb.png": "/cicaszitter/static/media/gomb.cf24f896c40d6b7df43a.png",
+    "static/media/arrow.png": "/cicaszitter/static/media/arrow.d13fa1182793874c0157.png",
+    "static/media/paw_black.png": "/cicaszitter/static/media/paw_black.2ca26d7d5168d224ce68.png",
+    "static/media/fb.png": "/cicaszitter/static/media/fb.24fb91c4ec25d1b6c1d3.png",
+    "static/media/info.png": "/cicaszitter/static/media/info.cae7cf94b1a290204f8a.png",
+    "index.html": "/cicaszitter/index.html",
+    "main.f45d946c.css.map": "/cicaszitter/static/css/main.f45d946c.css.map",
+    "main.4b8bf32e.js.map": "/cicaszitter/static/js/main.4b8bf32e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f45d946c.css",
+    "static/js/main.4b8bf32e.js"
+  ]
+}
