@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cicaszitter/static/css/main.f45d946c.css",
+    "main.css": "/cicaszitter/static/css/main.fb922118.css",
     "main.js": "/cicaszitter/static/js/main.4b8bf32e.js",
     "static/media/waiting.jpg": "/cicaszitter/static/media/waiting.b7b87d62deca78213a27.jpg",
     "static/media/cat1.jpg": "/cicaszitter/static/media/cat1.77fd3c93127c38f83fa5.jpg",
@@ -13,11 +13,11 @@
     "static/media/fb.png": "/cicaszitter/static/media/fb.24fb91c4ec25d1b6c1d3.png",
     "static/media/info.png": "/cicaszitter/static/media/info.cae7cf94b1a290204f8a.png",
     "index.html": "/cicaszitter/index.html",
-    "main.f45d946c.css.map": "/cicaszitter/static/css/main.f45d946c.css.map",
+    "main.fb922118.css.map": "/cicaszitter/static/css/main.fb922118.css.map",
     "main.4b8bf32e.js.map": "/cicaszitter/static/js/main.4b8bf32e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f45d946c.css",
+    "static/css/main.fb922118.css",
     "static/js/main.4b8bf32e.js"
   ]
 }
