@@ -677,7 +677,7 @@ img.waiting {
 
 /* Responsive settings */
 
-@media screen and (max-width: 1920px) {
+@media all and (min-width: 1601px) and (max-width: 3000px) {
   nav.navbar {
     width: 100%;
     margin: 0;
@@ -895,7 +895,7 @@ img.waiting {
   }
 }
 
-@media all and (max-width: 1370px) and (max-height: 770px) {
+@media all and (max-width: 1370px) {
   div.left h1 {
     font-size: 4.2rem;
   }
@@ -1212,7 +1212,7 @@ img.waiting {
 
   }
 }
-@media screen and (max-width: 360px) and (max-width: 760px) {
+@media screen and (max-width: 360px) {
 
   div.left h1 {
     font-size: 2rem;
