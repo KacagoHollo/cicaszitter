@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Chicle&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@1,400;1,700&family=Chicle&display=swap');
 
+@document url("https://kacagohollo.github.io/cicaszitter")
+
 * {
   margin: 0;
   padding: 0;
@@ -677,7 +679,7 @@ img.waiting {
 
 /* Responsive settings */
 
-@media all and (min-width: 1601px) and (max-width: 3000px) {
+@media all and (max-width: 3000px){
   nav.navbar {
     width: 100%;
     margin: 0;
