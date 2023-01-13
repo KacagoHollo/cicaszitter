@@ -989,6 +989,8 @@ img.waiting {
   }
 }
 
+
+
 @media all and (max-width: 1200px) {
   div.left h1 {
     font-size: 3.5rem;
@@ -1033,6 +1035,110 @@ img.waiting {
     width: 80%;
   }
 }
+
+
+@media all and (max-width: 1281px) and (max-height: 586px) {
+  div.left h1 {
+    font-size: 3.5rem;
+  }
+  img.cat-1 {
+    height: 120px;
+  }
+  img.fb {
+    height: 60px;
+  }
+  button.paw {
+    top: -80px;
+    transform: scale(0.35);
+  }
+
+  div.right button {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+  div.home p, div.price p, div.price ul {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+  div.home h1, div.price h1, div.bid h1 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  div.price ul {
+    line-height: 1rem;
+  }
+  div.bid {
+    height: 77%;
+    top: 60px;
+  }
+  h2.category {
+    font-size: 0.8rem !important;
+  }
+
+  form {
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+
+  form div div {
+    width: 80%;
+  }
+
+  .MuiFormControl-root {
+    width: 30%;
+  }
+  .MuiTextField-root {
+    height: 35px;
+  }
+
+  button.submit {
+    width: 22%;
+    margin-top: 20px;
+  }
+  button.submit h2 {
+    font-size: 0.7rem;
+  }
+  img.cat-button {
+    width: 60%;
+  }
+
+  div.info {
+    top: 91%;
+    left: -5%;
+  }
+  p.hover {
+    margin-left: -120px;
+    margin-top: -5px;
+    padding: 5px;
+    font-size: 0.5rem !important;
+    line-height: 0.8rem !important;
+    text-align: justify;
+  }
+  button.arrow {
+    bottom: -1px;
+  }
+
+  #input1, #input2, #input3, #input4, #input5,
+  #input6, #input7, #input8, #input9, #input10,
+  #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
+    padding-left: 5px;
+    font-size: 0.6rem;
+    height: 30px !important;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px;
+    letter-spacing: 0.00004rem;
+  }
+
+  .label {
+    line-height: 1rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.00004rem;
+
+  }
+}
+
+
 
 @media all and (max-width: 800px) {
   .App {
@@ -1087,6 +1193,9 @@ img.waiting {
     bottom: -4px;
   }
 }
+
+
+
 @media all and (max-width: 600px) {
   .App {
     grid-template-columns: 1.5fr 2.5fr 2.5fr 1.5fr;
