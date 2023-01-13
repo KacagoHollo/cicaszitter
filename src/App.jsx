@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 import Home from './pages/Home';
@@ -18,12 +18,12 @@ function App() {
     <div className="App"> 
       <Navbar/>
       <main >
-        <Routes>
-          <Route path='/' element={<Home />} />
+        <Switch>
+          <Route exact path='/' element={<Home />} />
           <Route path='/arak' element={<Price />}/>
           <Route path='/arajanlat' element={<Bid />}/>
           <Route path='/siker' element={<LoadingMask />}/>
-        </Routes>
+        </Switch>
       <img 
         className='background'
         // style={{ 
