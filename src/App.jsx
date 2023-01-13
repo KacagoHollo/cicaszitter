@@ -18,12 +18,12 @@ function App() {
     <div className="App"> 
       <Navbar/>
       <main >
-        <Switch>
+        <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/arak' element={<Price />}/>
           <Route path='/arajanlat' element={<Bid />}/>
           <Route path='/siker' element={<LoadingMask />}/>
-        </Switch>
+        </Routes>
       <img 
         className='background'
         // style={{ 
