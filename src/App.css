@@ -50,7 +50,7 @@ select {
   border-radius: 0;
 }
 
-/* CSS reset */
+/* End of CSS reset */
 
 .App {
   position: relative;
@@ -308,7 +308,7 @@ div.bid {
   z-index: 900;
 }
 
-div.bid h1 { 
+div.bid h1 {
   position: absolute;
   top: -15%;
   left: 25%;
@@ -401,10 +401,7 @@ p.hover {
   position: absolute;
   max-width: 14vw;
   min-width: 10vw;
-  /* top: 54%;
-  left: -17% */
   margin-left: -400px;
-  /* margin-bottom: 250px; */
   background-color:#9eada8;
   border-radius: 10px;
   text-align: justify;
@@ -452,7 +449,7 @@ div.price h1, div.price p, div.price ul {
 
 div.home h1, div.bid h1, div.price h1 {
   padding-bottom: 40px;
-  
+
   font-family: 'Chicle', cursive;
   letter-spacing: 0.1rem;
   color: #9eada8;
@@ -521,34 +518,18 @@ div.left-right {
   justify-content: center;
   align-items: center;
   z-index: 90;
-  
+
 }
 
 img.paws {
   position: absolute;
-
   transform: rotate(115deg);
   opacity: 0.7;
   padding: 10px;
   margin-bottom: 30px;
-  z-index: 999;
+  z-index: 901;
   overflow: hidden;
-
 }
-
-
-
-/* button.paw {
-  z-index: 999;
-  height: 100px;
-} */
-/* style={{backgroundColor:"#E6E9EC", height: "40px", display:"flex", alignItems: "center", justifyContent:"space-between"}} */
-
-/* button.yarn {
-  position: absolute;
-  bottom: -60px;
-  color: inherit;
-} */
 
 a {
   grid-area: footer1;
@@ -755,11 +736,11 @@ img.waiting {
     padding-right: 100px; */
     /* transform: translate(-10%, -20%); */
     overflow: visible;
-    z-index: 999;
+    z-index: 920;
     /* transform: scale(1, 1); */
 
   }
-  
+
   button.submit {
     width: 30%;
   }
@@ -813,7 +794,7 @@ img.waiting {
   }
    div.right button:nth-child(1) {
     margin-top: 150px;
-  } 
+  }
 
   div.home p, div.price p, div.price ul {
     font-size: 1rem;
@@ -890,11 +871,116 @@ img.waiting {
   }
 }
 
+
+@media all and (max-width: 1590px) and (max-height: 800px) {
+  div.left h1 {
+    font-size: 4.5rem;
+  }
+  img.cat-1 {
+    height: 140px;
+  }
+  img.fb {
+    height: 70px;
+  }
+  button.paw {
+    top: -60px;
+    transform: scale(0.40);
+  }
+
+  div.right button {
+    font-size: 1.8rem;
+    padding: 5px;
+  }
+  div.home p, div.price p, div.price ul {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  div.home h1, div.price h1, div.bid h1 {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+  }
+  div.price ul {
+    line-height: 1.2rem;
+  }
+  div.bid {
+    height: 64%;
+    top: 60px;
+  }
+  h2.category {
+    font-size: 0.7rem !important;
+  }
+
+  form {
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+
+  form div div {
+    width: 80%;
+  }
+
+  .MuiFormControl-root {
+    width: 30%;
+  }
+  .MuiTextField-root {
+    height: 35px;
+  }
+
+  button.submit {
+    width: 20%;
+    margin-top: 20px;
+  }
+  button.submit h2 {
+    font-size: 0.7rem;
+  }
+  img.cat-button {
+    width: 60%;
+  }
+
+  div.info {
+    top: 91%;
+    left: -5%;
+  }
+  p.hover {
+    margin-left: -140px;
+    margin-top: -5px;
+    padding: 5px;
+    font-size: 0.5rem !important;
+    line-height: 0.8rem !important;
+    text-align: justify;
+  }
+  button.arrow {
+    bottom: -1px;
+  }
+
+  #input1, #input2, #input3, #input4, #input5,
+  #input6, #input7, #input8, #input9, #input10,
+  #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
+    padding-left: 5px;
+    font-size: 0.6rem;
+    height: 30px !important;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px;
+    letter-spacing: 0.00004rem;
+  }
+
+  .label {
+    line-height: 0.9rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.00004rem;
+
+  }
+}
+
+
 @media all and (max-width: 1450px) {
   div.right button {
     font-size: 1.8rem;
   }
 }
+
+
 
 @media all and (max-width: 1370px) {
   div.left h1 {
@@ -920,7 +1006,7 @@ img.waiting {
   }
    div.right button:nth-child(1) {
     margin-top: 150px;
-  } 
+  }
 
   div.home p, div.price p, div.price ul {
     font-size: 0.8rem;
@@ -948,7 +1034,7 @@ img.waiting {
     font-size: 0.9rem;
   }
   form {
-    row-gap: 1px;
+    row-gap: 3px;
   }
   form div {
     transform: scale(1, 0.9);
@@ -961,7 +1047,7 @@ img.waiting {
   #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
     padding-left: 10px;
     font-size: 0.8rem;
-    height: 40px !important;
+    height: 35px !important;
     text-align: right;
     margin-right: 10px;
     margin-top: 5px;
@@ -975,8 +1061,6 @@ img.waiting {
     line-height: 0.9rem;
     text-align: left;
   }
-
-
   h1.first {
     margin-top: 60px;
    font-size: 5rem;
@@ -986,53 +1070,6 @@ img.waiting {
   }
   div.meow {
     margin: 0;
-  }
-}
-
-
-
-@media all and (max-width: 1200px) {
-  div.left h1 {
-    font-size: 3.5rem;
-  }
-  img.cat-1 {
-    height: 140px;
-  }
-  img.fb {
-    height: 60px;
-  }
-  button.paw {
-    top: -40px;
-    transform: scale(0.40);
-  }
-
-  div.right button {
-    font-size: 1.5rem;
-    padding: 5px;
-  }
-  div.home p, div.price p, div.price ul {
-    font-size: 0.7rem;
-    line-height: 1.3rem;
-  }
-  div.home h1, div.price h1, div.bid h1 {
-    font-size: 1.8rem;
-    padding-bottom: 20px;
-  }
-  div.price ul {
-    line-height: 1.2rem;
-  }
-  div.bid {
-    height: 72%;
-  }
-  h2.category {
-    font-size: 0.8rem !important;
-  }
-  button.submit {
-    width: 25%;
-  }
-
-  img.cat-button {
-    width: 80%;
   }
 }
 
@@ -1057,15 +1094,15 @@ img.waiting {
     padding: 5px;
   }
   div.home p, div.price p, div.price ul {
-    font-size: 0.6rem;
-    line-height: 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
   }
   div.home h1, div.price h1, div.bid h1 {
     font-size: 1.5rem;
     padding-bottom: 20px;
   }
   div.price ul {
-    line-height: 1rem;
+    line-height: 0.8rem;
   }
   div.bid {
     height: 77%;
@@ -1134,7 +1171,88 @@ img.waiting {
     line-height: 1rem;
     font-size: 0.7rem;
     letter-spacing: 0.00004rem;
+  }
 
+  div.thank {
+    gap: 20px;
+  }
+  h1.first {
+    font-size: 4rem;
+  }
+  h1.second {
+    font-size: 3rem;
+  }
+  img.waiting {
+    width: 15%;
+  }
+}
+
+
+
+@media all and (max-width: 1200px) {
+  div.left h1 {
+    font-size: 3rem;
+  }
+  img.cat-1 {
+    height: 140px;
+  }
+  img.fb {
+    height: 60px;
+  }
+  button.paw {
+    top: -40px;
+    transform: scale(0.40);
+  }
+
+  div.right button {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+  div.home p, div.price p, div.price ul {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+  div.home h1, div.price h1, div.bid h1 {
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+  }
+  div.price ul {
+    line-height: 1rem;
+  }
+
+  div.price {
+    padding: 10px 10px 20px 10px;
+  }
+
+  ul.contact {
+    letter-spacing: 0.0001rem;
+  }
+
+  div.bid {
+    height: 72%;
+  }
+  h2.category {
+    font-size: 0.8rem !important;
+  }
+  button.submit {
+    width: 20%;
+    margin-top: 10px;
+  }
+
+  img.cat-button {
+    width: 80%;
+  }
+  div.thank {
+    gap:40px;
+  }
+  h1.first {
+    font-size: 4rem;
+  }
+  h1.second {
+    font-size: 3rem;
+  }
+  img.waiting {
+    width: 40%;
   }
 }
 
@@ -1192,6 +1310,18 @@ img.waiting {
   button.arrow {
     bottom: -4px;
   }
+  div.thank {
+    gap: 30px;
+  }
+  h1.first {
+    font-size: 3.5rem;
+  }
+  h1.second {
+    font-size: 2.5rem;
+  }
+  img.waiting {
+    width: 40%;
+  }
 }
 
 
@@ -1227,7 +1357,6 @@ img.waiting {
     top: 40%;
     transform: scale(2.3);
   }
-
   div.home p, div.price p, div.price ul {
     font-size: 0.6rem;
     line-height: 1.2rem;
@@ -1238,9 +1367,7 @@ img.waiting {
   }
   div.price ul {
     line-height: 1.2rem;
-
   }
-
   div.bid {
     height: 72%;
   }
@@ -1321,31 +1448,78 @@ img.waiting {
     letter-spacing: 0.00004rem;
 
   }
+  div.thank {
+    gap: 20px;
+  }
+  h1.first {
+    font-size: 3.5rem;
+  }
+  h1.second {
+    font-size: 2.5rem;
+  }
+  img.waiting {
+    width: 50%;
+  }
 }
-@media screen and (max-width: 360px) {
+
+
+
+
+@media screen and (max-width: 360px) and (max-height: 770px) {
+
+  .App {
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-rows: 15% 75% 10%;
+  }
+  div.left {
+    grid-column: 2/5;
+    grid-row: 1;
+  }
 
   div.left h1 {
-    font-size: 2rem;
-    margin-right: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    margin-left: 35px;
+    padding-left: 20px;
+    margin-right: 30px;
+  }
+  div.catbox {
+    grid-column: 1/3;
+    grid-row: 1;
+    justify-self: baseline;
+    margin-left: 20px;
   }
   img.cat-1 {
     height: 80px;
   }
-  div.right {
-    width: 60%;
-    margin-left: 70px;
 
+  nav.navbar {
+    grid-row: 1/4;
+    grid-column: 4/5;
+    width: 80%;
   }
+
+  div.right {
+    width: 100%;
+    margin-left: 25px;
+    gap: 100px;
+  }
+
+  div.right button:nth-child(1) {
+    margin-top: 60px;
+  }
+
   button.paw {
-    transform: scale(0.25);
-    top: -50px;    
-    right: -27vw;
+    transform: scale(0.24);
+    top: -90px;
+    right: -32vw;
   }
 
   div.right button {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
     transform: scale(1, 1.5);
   }
   img.fb {
@@ -1353,7 +1527,15 @@ img.waiting {
   }
   main {
     gap: 5vw;
+    width: 100%;
   }
+
+  img.background {
+    position: absolute;
+    opacity: 0.3;
+    width: 100%;
+  }
+
   img.paws-home {
     left: 10%;
     top: 40%;
@@ -1361,86 +1543,104 @@ img.waiting {
   }
 
   div.home p, div.price p, div.price ul {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     line-height: 1rem;
   }
   div.home h1, div.price h1, div.bid h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-bottom: 20px;
   }
   div.price ul {
     line-height: 1rem;
-
   }
 
-  div.bid {
-    height: 72%;
-  }
   h2.category {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
   }
   div.price, div.home {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px 10px 10px;
     text-indent: 0;
-    width: 60%;
+    width: 100%;
+    height: 95%;
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
 
   ul.contact {
     letter-spacing: 0.001rem;
   }
   div.bid {
-    height: 95%;
+    width: 100% !important;
+    height: 74%;
     top: 60px;
+
+    margin-top: 30px !important;
+  }
+
+  div.bid h1 {
+    margin-top: 15px !important;
   }
   form {
-    column-gap: 25px;
-    row-gap: 10px;
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-left: -30px;
   }
 
   form div div {
-    width: 110%;
+    width: 85%;
   }
 
   .MuiFormControl-root {
-    width: 50%;
+    width: 60%;
   }
   .MuiTextField-root {
-    height: 40px;
+    height: 36px;
   }
 
   button.submit {
     width: 50%;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   button.submit h2 {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   img.cat-button {
-    width: 60%;
+    width: 70%;
   }
 
   div.info {
-    top: 64%;
-    left: -14%;
+    top: 59%;
+    left: -22%;
+
+    width: 30px;
+    height: 30px;
   }
   p.hover {
-    margin-left: -60px;
-    margin-top: -10px;
+    margin-left: 120px;
+    margin-top: 200px;
+    min-width: 120px;
     padding: 5px;
     font-size: 0.5rem !important;
     line-height: 0.8rem !important;
     text-align: justify;
+    z-index: 999 !important;
+    background-color:#9eada8 !important;
   }
   button.arrow {
-    bottom: -1px;
+    bottom: 2px;
+    width: 18vw !important;
+  }
+  button.arrowW {
+    bottom: 2px;
+    width: 18vw !important;
   }
 
   #input1, #input2, #input3, #input4, #input5,
   #input6, #input7, #input8, #input9, #input10,
   #input11, #input12, #input13, #input14, #input15, #input16, #input17 {
-    padding-left: 5px;
-    font-size: 0.6rem;
-    height: 38px !important;
+    padding-left: 1px;
+    font-size: 0.5rem;
+    height: 33px !important;
     text-align: right;
     margin-right: 5px;
     margin-top: 5px;
@@ -1449,8 +1649,53 @@ img.waiting {
 
   .label {
     line-height: 1rem;
-    font-size: 0.7rem;
-    letter-spacing: 0.00004rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.0004rem;
+  }
 
+  a {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    justify-self: flex-start;
+    margin-left: 10px;
+  }
+
+  img.fb {
+    height: 50px;
+  }
+
+  img.paws-home {
+    width: 44vw !important;
+    top: -34% !important;
+    left: 26%;
+    transform: rotate(125deg);
+  }
+  div.thank {
+    width: 110vw;
+    padding: 15px;
+    gap: 20px;
+    top: -15vh;
+    left: -15vw;
+    align-items: center;
+
+  }
+  .mpaws {
+    width: 100%;
+    /* height: 100%; */
+  }
+  h1.first {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    letter-spacing: 0.1rem;
+  }
+
+  h1.second {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    margin: 10px;
+  }
+
+  img.waiting {
+    width: 70%;
   }
 }
