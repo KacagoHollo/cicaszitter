@@ -19,10 +19,10 @@ function App() {
       <Navbar/>
       <main >
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/arak' element={<Price />}/>
-          <Route path='/arajanlat' element={<Bid />}/>
-          <Route path='/siker' element={<LoadingMask />}/>
+          <Route path='cicaszitter/' element={<Home />} />
+          <Route path='cicaszitter/arak' element={<Price />}/>
+          <Route path='cicaszitter/arajanlat' element={<Bid />}/>
+          <Route path='cicaszitter/siker' element={<LoadingMask />}/>
         </Routes>
       <img 
         className='background'
