@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cicaszitter/static/css/main.4b80eb51.css",
-    "main.js": "/cicaszitter/static/js/main.38832b54.js",
+    "main.css": "/cicaszitter/static/css/main.fb95e015.css",
+    "main.js": "/cicaszitter/static/js/main.c0739cff.js",
     "static/media/waiting.jpg": "/cicaszitter/static/media/waiting.b7b87d62deca78213a27.jpg",
     "static/media/cat1.jpg": "/cicaszitter/static/media/cat1.77fd3c93127c38f83fa5.jpg",
     "static/media/manypaw.png": "/cicaszitter/static/media/manypaw.401f582f0c7f9ff0d269.png",
@@ -13,11 +13,11 @@
     "static/media/fb.png": "/cicaszitter/static/media/fb.24fb91c4ec25d1b6c1d3.png",
     "static/media/info.png": "/cicaszitter/static/media/info.cae7cf94b1a290204f8a.png",
     "index.html": "/cicaszitter/index.html",
-    "main.4b80eb51.css.map": "/cicaszitter/static/css/main.4b80eb51.css.map",
-    "main.38832b54.js.map": "/cicaszitter/static/js/main.38832b54.js.map"
+    "main.fb95e015.css.map": "/cicaszitter/static/css/main.fb95e015.css.map",
+    "main.c0739cff.js.map": "/cicaszitter/static/js/main.c0739cff.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b80eb51.css",
-    "static/js/main.38832b54.js"
+    "static/css/main.fb95e015.css",
+    "static/js/main.c0739cff.js"
   ]
 }
