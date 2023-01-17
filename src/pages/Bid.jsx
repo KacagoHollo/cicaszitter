@@ -61,10 +61,10 @@ function Bid() {
   const onSubmit = (e) => {
     e.preventDefault();
     send(
-      'service_e2i9rjw',
-      'template_kky4w6o',
+      'service_vxza45n',
+      'template_m4cu22g',
       toSend,
-      'OvK2rMIAAgvQVhCEN'
+      '_p8_aI1JdDYv4Ircb'
     )
       nav('/siker')
     .then((response) => {
