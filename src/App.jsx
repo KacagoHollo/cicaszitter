@@ -10,6 +10,7 @@ import Price from './pages/Price';
 import background from './pictures/backcat.png'
 import fb from './pictures/fb.png'
 import LoadingMask from './components/LoadingMask';
+import PageNotFound from './components/PageNotFound'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/arak' element={<Price />}/>
           <Route path='/arajanlat' element={<Bid />}/>
           <Route path='/siker' element={<LoadingMask />}/>
+          <Route path="*" component={PageNotFound} />
         </Routes>
       <img 
         className='background'
