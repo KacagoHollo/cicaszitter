@@ -1,6 +1,6 @@
 import './App.css';
-import React, { useState } from 'react';
-import { Routes, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 import Home from './pages/Home';
@@ -21,10 +21,10 @@ function App() {
       <main >
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/arak' element={<Price />}/>
-          <Route path='/arajanlat' element={<Bid />}/>
-          <Route path='/siker' element={<LoadingMask />}/>
-          <Route path="*" component={<PageNotFound />} />
+          <Route exact path='/arak' element={<Price />}/>
+          <Route exact path='/arajanlat' element={<Bid />}/>
+          <Route exact path='/siker' element={<LoadingMask />}/>
+          <Route path="*" component={PageNotFound} />
         </Routes>
       <img 
         className='background'
