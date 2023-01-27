@@ -3,12 +3,12 @@ import React from 'react';
 import { hydrate, render } from "react-dom";
 import './index.css';
 import App from './App';
-import { HashRouter } from "react-router-dom";
+import { HashRouter, BrowserRouter } from "react-router-dom";
 
 const APP = (
-<HashRouter>
+<BrowserRouter>
   <App />
-</HashRouter>);
+</BrowserRouter>);
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
