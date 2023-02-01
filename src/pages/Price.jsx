@@ -36,7 +36,7 @@ function Price() {
         <ul className='contact'>
           <u className='cTitle'>Elérhetőségeink:</u> 
           <li>- +36 70 421 2945</li>
-          <li>- lustamacskacicaszitter@gmail.com</li>
+          <li>- lustamacskacicaszitter0@gmail.com</li>
         </ul>
       </>
       ) :
