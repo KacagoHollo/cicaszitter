@@ -24,7 +24,7 @@ function App() {
           <Route exact path='/arak' element={<Price />}/>
           <Route exact path='/arajanlat' element={<Bid />}/>
           <Route exact path='/siker' element={<LoadingMask />}/>
-          <Route path="*" component={PageNotFound} />
+          <Route path="*" element={PageNotFound} />
         </Routes>
       <img 
         className='background'
